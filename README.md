@@ -2,10 +2,14 @@
 
 This repository contains detailed annotations for the MVTec dataset, which has been traditionally used for unsupervised anomaly detection tasks. These annotations aim to enhance the existing MVTec dataset by providing **detailed descriptions** of the anomalies in the images, including **types**, **locations (bounding boxes)**, **sizes**, and **descriptions**.
 
+---
+
 ## Contents
 
 - **Annotations**: A JSON file containing detailed descriptions for each image in the MVTec dataset.
-- **Code**: The code used to generate the annotations will be made available in the future. 
+- **Code**: The code used to generate the annotations will be made available in the future.
+
+---
 
 ## Purpose
 
@@ -16,9 +20,27 @@ These annotations can be particularly helpful for:
 - **Evaluation**: Researchers can use the annotations for more accurate evaluation of anomaly detection models by comparing predicted bounding boxes with ground truth.
 - **Dataset Enhancement**: By augmenting the MVTec dataset with these detailed annotations, it becomes more valuable for fine-grained anomaly detection tasks.
 
+---
+
+## Benefits for Large Language Models (LLMs)
+
+These detailed annotations bridge the gap between **vision and language models**, enabling the following:
+
+1. **Multimodal Learning**: The textual descriptions align with visual data, making the annotations valuable for training **vision-language models** like CLIP or BLIP. This can help LLMs learn to understand and generate text based on visual anomaly information.
+2. **Improved Explainability**: LLMs fine-tuned on these annotations can describe the types, sizes, and locations of anomalies in natural language, improving interpretability in anomaly detection systems.
+3. **Query-Based Analysis**: Researchers can interact with LLMs using natural language queries (e.g., "Find images with contamination anomalies larger than 10,000 pixels") and retrieve relevant visual or textual data.
+4. **Synthetic Data Generation**: LLMs can generate new anomaly scenarios or textual prompts based on these annotations to simulate real-world industrial defect data.
+5. **Benchmarking and Validation**: The detailed annotations allow LLMs to assist in validating anomaly detection models by comparing predicted outputs with ground truth descriptions.
+
+By combining your annotations with LLMs, researchers can enhance multimodal learning and develop more intelligent, explainable, and interactive anomaly detection frameworks.
+
+---
+
 ## License
 
 The annotations in this repository are made available under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/), consistent with the MVTec dataset license.
+
+---
 
 ## Citation
 
@@ -40,6 +62,8 @@ If you use the detailed annotations provided in this repository, please also cit
 
 > **Asim Niaz, Muhammad Umraiz, Kwang Nam Choi** (2024). *MVTec Dataset Detailed Annotations for Anomaly Detection*. Retrieved from [[GitHub Repository URL](https://github.com/asimniaz-ai/MVTec_detailed_annotations)].
 
+---
+
 ## How to Use the Annotations
 
 The annotations in this repository are stored in a JSON format, and each entry contains the following fields:
@@ -55,6 +79,8 @@ The annotations in this repository are stored in a JSON format, and each entry c
   - `max_row`: The maximum row (y-coordinate) of the bounding box.
   - `max_col`: The maximum column (x-coordinate) of the bounding box.
 - **description**: A textual description of the anomaly in the image.
+
+---
 
 ### Example of Annotation Structure
 
