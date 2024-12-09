@@ -1,12 +1,12 @@
 # MVTec Dataset Detailed Annotations
 
-This repository contains detailed annotations for the MVTec dataset, which has been traditionally used for unsupervised anomaly detection tasks. These annotations are intended to enhance the existing MVTec dataset by providing **detailed descriptions** of the anomalies in the images, including **types**, **locations (bounding boxes)**, **sizes**, and **descriptions**.
+This repository contains detailed annotations for the MVTec dataset, which has been traditionally used for unsupervised anomaly detection tasks. These annotations aim to enhance the existing MVTec dataset by providing **detailed descriptions** of the anomalies in the images, including **types**, **locations (bounding boxes)**, **sizes**, and **descriptions**.
 
 ## Contents
 
 - **Annotations**: A JSON file containing detailed descriptions for each image in the MVTec dataset.
-- **Code**: Scripts used to generate the annotations.
-  
+- **Code**: The code used to generate the annotations will be made available in the future. 
+
 ## Purpose
 
 These annotations can be particularly helpful for:
@@ -81,4 +81,3 @@ The annotations in this repository are stored in a JSON format, and each entry c
     ],
     "description": "Anomaly of type 'faulty_imprint' found in pill images. Image name: 016.png. Number of anomalies: 2, Size of anomalies: 26388 pixels."
 }
-
